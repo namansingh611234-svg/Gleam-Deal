@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.g{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    background-color: aquamarine;
+    
+}
+
+.content{
+    color: black;
+    font-style: italic;
+    background-color: aquamarine;
+}

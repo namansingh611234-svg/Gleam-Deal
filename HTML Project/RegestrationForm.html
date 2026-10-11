@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration Form</title>
+</head>
+<body>
+<center>
+    <img src="https://aidasco.org/wp-content/uploads/2021/03/GLA-U-logo-1024x432.jpg"width="200">
+    <hr color="green">
+  <h3>Regeastration Form</h3>
+</center>
+    <center><form style="border: 3px solid rgba(85, 82, 82, 0.459) ; border-radius: 15px; width:500px; height: 400px; padding: 10px; box-shadow: 0px 8px 20px rgba(0,128,0,0.35)">
+            <br>
+
+            <div>
+            <label for="firstname">First Name</lable>
+            <input type="text" id="firstname">
+            </div>
+            <br>
+
+            <div>
+            <label for="lastname">Last Name</lable>
+            <input type="text" id="lastname">
+            </div>
+            <br>
+
+            <div>
+                <label for="email">Email</lable>
+                <input type="email" id="email">
+            </div>
+            <br>
+
+            <div>
+                <label for="mobile">Mobile</label>
+                <input type="tel" id="mobile">
+            </div>
+            <br>
+
+            <div>
+                <span>Select your Gender</span>
+                <div>
+                   <input type="radio" id="male" name="gender" value="male">
+                   <label for="male">Male</label>
+                   
+                   <input type="radio" id="female" name="gender" value="female">
+                   <label for="male">Female</label>
+
+                   <input type="radio" id="others" name="gender" value="others">
+                   <label for="other">Others</label>
+                </div>
+            </div>
+            <br>
+
+            <div>
+            <label for="education">Recent Education</label>
+            <input type="text" id="education">    
+            </div>
+            <br>
+
+            <div>
+                <label for="course">Select your intrested course</label>
+                <select id="course">
+                    <option value="btech">B.tech</option>
+                    <option value="mtech">M.tech</option>
+                     <option value="bca">BCA</option>
+                      <option value="mca">MCA</option> 
+                </select>
+            </div>
+            <br>
+
+            <div class="textarea-container">
+                <textarea name="query" placeholder="Write your query hare..."></textarea>
+            </div>
+            <br>
+
+            <div>
+            <input type="submit" value="Submit">
+            </div>
+            <br>
+       
+        </form>
+        </center>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Change Cursor</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .left:hover {
+            cursor: url("./Google__G__logo.png") 16 16, auto;
+           
+        }
+        .right:hover {
+            cursor: url("./netflix-transparent-netflix-free-free-png.png") 16 16, auto;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .left,
+        .right{
+            width: 50%;
+            height: 100vh;
+            text-align: center;
+        }
+    .line {
+    width: 2px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    left: 50%;
+    top: 0;
+}
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <!--left side-->
+    <div class="side left">
+    <h1>Google</h1>
+    <p>
+        Google is an American multinational technology company best known
+        for its search engine.
+    </p>
+    </div>
+
+    <!--vertical line-->
+<div class="line"></div>
+
+<!--Right line-->
+ <div class="side right">
+    <h1>Netflix</h1> 
+    <p>
+        Netflix is an online streaming service that lets you watch movies,
+        TV shows, anime, and documentaries over the internet.
+    </p>
+ </div>
+</div>
+</body>
+
+</html>

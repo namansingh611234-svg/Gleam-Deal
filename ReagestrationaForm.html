@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    .form-container {
+      width: 450px;
+      margin: 20px auto;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-group label, .form-group span {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group select {
+      width: 200px;
+      padding: 6px 10px;
+      border: 1px solid #777;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    .textarea-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 15px 0;
+    }
+
+    textarea {
+      width: 220px;
+      height: 60px;
+      padding: 8px;
+      border: 1px solid #777;
+      font-family: inherit;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      padding: 6px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+<center>
+    <img src="https://aidasco.org/wp-content/uploads/2021/03/GLA-U-logo-1024x432.jpg"width="300">
+    <hr color="green">
+  <h3>Regeastration Form</h3>
+</center>
+  <div class="form-container">
+    <form>
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="firstName">
+      </div>
+
+      <!-- Last Name -->
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="lastName">
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <!-- Mobile -->
+      <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile">
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <span>Select your Gender</span>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+
+          <input type="radio" id="others" name="gender" value="others">
+          <label for="others">Others</label>
+        </div>
+      </div>
+
+      <!-- Recent Education -->
+      <div class="form-group">
+        <label for="education">Recent Education</label>
+        <input type="text" id="education" name="education">
+      </div>
+
+      <!-- Select Course -->
+      <div class="form-group">
+        <label for="course">Select your interested course</label>
+        <select id="course" name="course">
+          <option value="btech">B Tech</option>
+          <option value="mtech">M Tech</option>
+          <option value="bca">BCA</option>
+          <option value="mca">MCA</option>
+        </select>
+      </div>
+
+      <!-- Query Textarea -->
+      <div class="textarea-container">
+        <textarea name="query" placeholder="Write your query here..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="button-container">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
